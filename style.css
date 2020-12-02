@@ -1,0 +1,24 @@
+body,
+html {
+    margin: 0;
+    background: linear-gradient(to bottom right, #3C4BDE 20%, #367CF5 70%, #2BEAFF 100%);
+    animation: color 10s 0s infinite;
+}
+
+@keyframes color {
+    20% {
+        filter: hue-rotate(5deg);
+    }
+
+    40% {
+        filter: hue-rotate(20deg);
+    }
+
+    60% {
+        filter: hue-rotate(0deg) saturate(2);
+    }
+
+    80% {
+        filter: hue-rotate(-20deg);
+    }
+}
