@@ -3,21 +3,26 @@
 
     <head>
         <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <ul>
-                <li><a href="#">facilisis sed</a></li>
+            <ul id="main-menu">
+                <li><a href="#from-me">Обо мне</a></li>
                 <li><a href="#">magna sit</a></li>
                 <li><a href="#">at lectus</a></li>
                 <li><a href="#">adipiscing elit</a></li>
             </ul>
         </header>
         <main>
-            <h1>velit dignissim</h1>
-            <h2>faucibus scelerisque</h2>
-            <p>et malesuada fames ac turpis egestas sed</p>
+            <h1>Мой превый сайт</h1>
+            <h2 id="from-me">Обо мне</h2>
+            <p>Итак, это мой первый сайт который я создаю абсолютно сам, только лишь ингода я пользуюсь подсказками. Скорее всего, это будет заготовка для каких-нибудь проектов.</p>
+            <p>Этот сайт я ещё буду дорабатывать, кстати уже загрузил шрифты.</p>
             <h2>est ullamcorper</h2>
             <h3>porttitor massa</h3>
             <p>imperdiet proin fermentum leo vel orci porta</p>
@@ -31,6 +36,20 @@
         <footer>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </footer>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $("#main-menu").on("click", "a", function(event) {
+                    event.preventDefault();
+                    var id = $(this).attr('href'),
+                        top = $(id).offset().top;
+                    $('body,html').animate({
+                        scrollTop: top
+                    }, 1500);
+                });
+            });
+
+        </script>
     </body>
 
     </html>

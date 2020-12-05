@@ -1,14 +1,21 @@
 body,
 html {
-    margin: 0;
+    margin: 0px 0;
     padding: 0;
     background: linear-gradient(to bottom right, #3C4BDE 20%, #367CF5 70%, #2BEAFF 100%);
     animation: color 10s 0s infinite;
-    font-family:
+    font-family: 'Rubik', sans-serif;
 }
 
 body {
     padding-top: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
 }
 
 main,
@@ -30,7 +37,17 @@ header {
 
 main {
     min-height: 400px;
-    padding: 20px;
+    padding: 25px;
+}
+
+footer {
+    width: 100%;
+    border-radius: 0;
+    background: #000;
+    margin-bottom: -16px;
+    margin-top: 18px;
+    color: azure;
+    padding: 18px 0;
 }
 
 ul {
@@ -51,22 +68,23 @@ li {
 li a {
     display: inline-block;
     text-decoration: none;
-    color: #d3e;
+    color: darkred;
     animation: color 20s 5s infinite;
-    transition: color 450ms ease-in;
-    background: #246;
+    transition: color 450ms ease-in, box-shadow 200ms ease-in;
+    background: #ddd;
     padding: 10px;
     border-radius: 6px;
 }
 
 li a:hover {
-    color: #ed3;
+    color: darkgoldenrod;
+    box-shadow: 1px 2px 4px 1px #aaa;
 }
 
 h1,
 h2,
 h3 {
-    margin-left: 46px;
+    margin-left: 25px;
     text-transform: uppercase;
 }
 
@@ -83,7 +101,8 @@ h3 {
 }
 
 p {
-    margin-left: 20px;
+    margin-left: 35px;
+    font-family: 'Roboto', sans-serif;
 }
 
 @keyframes color {
