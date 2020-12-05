@@ -1,8 +1,89 @@
 body,
 html {
     margin: 0;
+    padding: 0;
     background: linear-gradient(to bottom right, #3C4BDE 20%, #367CF5 70%, #2BEAFF 100%);
     animation: color 10s 0s infinite;
+    font-family:
+}
+
+body {
+    padding-top: 25px;
+}
+
+main,
+footer,
+header {
+    width: 90%;
+    background: #eee;
+    text-align: left;
+    vertical-align: bottom;
+    border-radius: 8px;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+main {
+    min-height: 400px;
+    padding: 20px;
+}
+
+ul {
+    list-style: none;
+    white-space: nowrap;
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 0;
+    margin-right: 20px;
+    height: 40px;
+    width: 120px;
+    vertical-align: middle;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #d3e;
+    animation: color 20s 5s infinite;
+    transition: color 450ms ease-in;
+    background: #246;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+li a:hover {
+    color: #ed3;
+}
+
+h1,
+h2,
+h3 {
+    margin-left: 46px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 34px;
+}
+
+h2 {
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+p {
+    margin-left: 20px;
 }
 
 @keyframes color {
